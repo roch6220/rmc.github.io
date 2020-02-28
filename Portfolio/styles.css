@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "header header header"
+  "left right main"
+  "footer footer footer";
+  grid-template-columns: 190px 1fr 4fr;
+  grid-template-rows: 160px 1fr 80px;
+}
+.container > div {
+  border: 0px dashed #888;
+}
+
+.header {
+  grid-area: header; background-color: orange;
+}
+.left {
+  grid-area: left; height: 600px; padding-top: 120px;
+}
+.right {
+  grid-area: right; text-align: left;}
+.footer {
+  grid-area: footer; background-color: orange;
+}
+h1 {color: rgb(43, 51, 45); text-align: auto;}
+.main {grid-area: main; text-align: center;}
+p {text-align: center; margin-left: 30px; margin-right: 80px; margin-top: 50px;
+text-decoration-style: solid; text-indent: 5px; text-justify: auto; font-size: 24px;}
+
+.button{ border-radius: 8px; background-color: orange; cursor: pointer; }
+.btn-group{ padding-left: 20px; background-color: white; }
+
